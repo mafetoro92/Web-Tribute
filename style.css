@@ -1,0 +1,226 @@
+body{
+    font-family: georgia, times, serif;
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0%;
+}
+
+h1{
+    font-size: 2rem;
+    line-height: 1.3em;
+    
+}
+
+p{
+    margin-bottom: 1.6em;
+}
+
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin:0 auto;
+}
+
+/*Aplicacion de Flexbox en imagenes home page*/
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-picture{
+    padding: 0 20px 20 px;
+}
+
+img:hover{
+    opacity: .6;
+    transition: .9s;
+}
+
+/*Aplicacion de Flexbox en galeria*/
+
+.flex-container-galery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*Aplicacion de Flexbox en biografia*/
+.flex-container-bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Aplicacion de Flexbox en el footer*/
+.flex-container-footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*Aplicacion de Flexbox en biotexto*/
+
+.flex-container-biotexto{
+    display: flex;
+    flex-flow: row wrap;
+}
+.header{
+    background: black;
+    color: white;
+    padding: 1rem 0;
+
+    /*aplicamos para que la cabecera sea fija*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+    .header a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /*Aplicacion de Flexbox en header*/
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    .navigation ul li {
+        display: inline-block;
+    }
+
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+
+    .navigation ul li a:hover{
+        background: #4a4a4a;
+    }
+
+.main{
+    padding-top: 12rem;
+}
+
+.circular--square-uno {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--square-dos {
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.circular--square-tres{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#contenedore {
+    width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.circular--square-cuatro{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.circular--square-cinco{
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+#contenedor {
+    width: 50%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.circular--square-sexta{
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    float: right;
+}
+
+.footer{
+    background: black;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation{
+        width: 100%;
+        margin-top: 1rem;
+    }
+        .navigation ul {
+            display: none;
+        }
+        .navigation ul.show{
+            display: block;
+        }
+        .navigation ul li {
+            display: block;
+        }
+    
+        .navigation ul li a {
+            display: block;
+            padding: 0.5rem 0;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+    
+        .navigation ul li a:hover{
+            background: #4a4a4a;
+        }        
+}
