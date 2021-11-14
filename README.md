@@ -6,4 +6,4 @@ See the project deployment in the link.
 
 Link: https://angry-lalande-3235dd.netlify.app/
 
-<img src=>
+<img src="">
